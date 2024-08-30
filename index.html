@@ -19,12 +19,35 @@
         crossorigin="anonymous" />
     <!--Estilos CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+
+        // Función para detectar si el dispositivo es una PC
+        function esPC() {
+            const userAgent = navigator.userAgent;
+            const mobileKeywords = ['Mobi', 'Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+
+            for (let i = 0; i < mobileKeywords.length; i++) {
+                if (userAgent.indexOf(mobileKeywords[i]) !== -1) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // Función para redireccionar en caso de ser PC
+        function redireccionarSiEsPC() {
+            if (esPC()) {
+                window.location.href = 'error.html';
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="redireccionarSiEsPC()">
     <!--Inicio del Reproductor-->
     <div class="container">
-
+        <center><b>¡ALBUN ACTUALIZADO!</b></center>
         <!--Datos de la Canción-->
         <div id="datos_musica">
             <p id="nombre"></p>
@@ -72,8 +95,7 @@
             <h2 class="form-signin-heading">ENVIAME TUS MUSICAS SUGERIDAS</h2>
             <input type="text" name="message" id="message" class="form-control">
             <h2 class="form-signin-heading">Nombre:</h2>
-            <input name="from_name" id="from_name" type="text" class="form-control"
-                placeholder="Ingresa tu Nombre" />
+            <input name="from_name" id="from_name" type="text" class="form-control" placeholder="Ingresa tu Nombre" />
             <input id="to_name" name="to_name" type="hidden" class="form-control" placeholder="Contraseña"
                 value="FabianSM" />
             <button type="submit" id="button" value="Send Email">Enviar</button>

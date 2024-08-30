@@ -1,8 +1,8 @@
 //Declaración variables - arreglos
-let albumes = ["img/song1.jpg", "img/song2.jpg", "img/song3.jpg", "img/song4.jpg"];//8
-let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3"];
-let nombres = ["El Malo", "Darte Un Beso", "Dia De Suerte", "Eres Tu"];
-let artistas = ["Manuel Lizarazo", "Prince Royce", "Alejandra Guzman", "Morat"];
+let albumes = ["img/song1.jpg", "img/song2.jpg", "img/song3.jpg", "img/song4.jpg", "img/song5.jpg", "img/song6.jpg", "img/song7.jpg"];//8
+let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3", "media/song5.mp3", "media/song6.mp3", "media/song7.mp3"];
+let nombres = ["El Malo", "Darte Un Beso", "Dia De Suerte", "Eres Tu", "Luna", "Ay Corazón", "Vienes y Te Vas"];
+let artistas = ["Manuel Lizarazo", "Prince Royce", "Alejandra Guzman", "Morat", "Feid", "Pelo D'Ambrosio", "Willian Luna"];
 
 var cont = 0;
 var reproducir = false;
@@ -46,13 +46,13 @@ $(document).ready(function () {
 
     //Botón de Siguiente
     $("#next").click( () => {
-        if(cont <= 3){//7
+        if(cont <= 6){//7
             cont++;
             RecorrerArray();
             Reproducir();
             Reproduciendo();
 
-            if(cont==4){//8
+            if(cont==7){//8
                 cont=0;
                 RecorrerArray();
                 Reproducir();
@@ -70,7 +70,7 @@ $(document).ready(function () {
             Reproduciendo();
 
             if(cont<0){
-                cont=3;//7
+                cont=6;//7
                 RecorrerArray();
                 Reproducir();
                 Reproduciendo();
