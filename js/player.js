@@ -1,8 +1,8 @@
 //Declaración variables - arreglos
 let albumes = ["img/song1.jpg", "img/song2.jpg", "img/song3.jpg", "img/song4.jpg", "img/song5.jpg", "img/song6.jpg", "img/song7.jpg"];//8
-let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3", "media/song5.mp3", "media/song6.mp3", "media/song7.mp3"];
-let nombres = ["El Malo", "Darte Un Beso", "Dia De Suerte", "Eres Tu", "Luna", "Ay Corazón", "Vienes y Te Vas"];
-let artistas = ["Manuel Lizarazo", "Prince Royce", "Alejandra Guzman", "Morat", "Feid", "Pelo D'Ambrosio", "Willian Luna"];
+let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3", "media/song55.mp3", "media/song6.mp3", "media/song7.mp3"];
+let nombres = ["El Malo", "Darte Un Beso", "Dia De Suerte", "Eres Tu", "Valio La Pena Esperar", "Ay Corazón", "Vienes y Te Vas"];
+let artistas = ["Manuel Lizarazo", "Prince Royce", "Alejandra Guzman", "Morat", "Bella Bella", "Pelo D'Ambrosio", "Willian Luna"];
 
 var cont = 0;
 var reproducir = false;
